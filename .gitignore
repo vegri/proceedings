@@ -1,0 +1,5 @@
+.project
+.texlipse
+*.bib
+*.pdf
+tmp/

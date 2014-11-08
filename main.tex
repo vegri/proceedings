@@ -1,0 +1,199 @@
+\documentclass{PoS}
+
+\let\ifpdf\relax
+
+\usepackage{cite}
+\usepackage[square, comma, numbers, sort&compress]{natbib}
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{placeins}
+% \usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{capt-of}
+\usepackage{array}
+\usepackage{subcaption}
+\usepackage{here}
+\usepackage[labelfont=bf, format=plain, font=it]{caption}
+\usepackage[german]{babel}
+% \usepackage{biblatex}
+
+\parindent0pt
+\hyphenation{Ex-pe-ri-ment}
+
+\title{Spurdetektoren} \author{\speaker{Verena
+Grimm}\\
+        Johannes Gutenberg Universität, 55099 Mainz\\
+        \\
+        E-mail: \email{vegrimm@students.uni-mainz.de}}
+
+\abstract{
+% The history of cold fusion is regarded under the light of the scientific method.
+% A short introduction to nuclear fusion in general is given before having a look at the beginnings of cold
+% fusion in the 1940's, leading to the most famous and controversially discussed experiment of cold fusion
+%  of Fleischmann and
+% Pons in 1989. Finally, the research in the years following as well as its future prospects are briefly
+% discussed, concluding the necessity of further research.
+einleitung in spurdetektoren (möglichkeiten, spuren geladener teilchen zu detektieren; warum macht
+man das; grundlegende funktionen von gas, halbleiter und szintidetektoren werden kurz erläutert und
+vor-und nachteile sowie einsatzgebiete 
+
+}
+
+\FullConference{Masterseminar I: Thema -- Kern- und Teilchenphysik\\
+		 WS 2014/2015,\\
+		 Mainz, Germany}
+\ShortTitle{Spurdetektoren}
+% \PoS{Keine Ahnung was das ist}
+
+\begin{document}
+
+\section{Einleitung: Wozu die Spur eines Teilchens bestimmen?}
+
+Teilchendetektoren dienen dem Nachweis freier Teilchens durch Messung verschiedener Parameter wie
+z.B. Energie, Impuls oder Ladung. Dabei wird die absorbierte Energie, die ein Teilchen beim
+Durchgang durch die Materie des Detektors an diese abgibt, in ein auswertbares Signal umgewandelt.
+Ziel eines Spurdetektors ist es, mit diesem Signal auch eine Ortsinformation zu erhalten. Somit
+kann man die Trajektorie eines Teilchen durch Detektion an verschiedenen Orten und anschließender
+Rekonstruktion der Bahnkurve bestimmen.
+\\
+Mit der Spur des Teilchens kann man dessen Ursprung zurückverfolgen, bei einem Collider-Experiment
+beispielsweise wäre dies der Ort der Kollision der Primärteilchen. Dies kann man zur
+Untergrundunterdrückung - falls das Teilchen von irgendwo anders herstammt - und auch zur
+Messung von Zerfallsstrecken einsetzen, bei der dann die Bahnkurve der Teilchen bestimmt wird, in
+die ein Sekundärteilchen zerfallen ist. Viel wichtiger ist noch, bei vielen gleichzeitigen Events,
+wie z.B. bei LHC-Experimenten wie ATLAS, bei denen viele Sekundärteilchen auf einmal gemessen
+werden, jedes Teilchen einer Kollision zuzuweisen, damit diese einzeln analysiert werden kann.
+Hierbei stellt der Schnittpunkt zwischen rekonstruierter Bahn und Strahl den Ort der
+Kollision dar.
+Befindet sich ein Spurdetektor zusätzlich noch in einem Magnetfeld, kann mithilfe der Lorentzkraft,
+die geladene Teilchen in Bewegung auf eine Kreisbahn zwingt, die Ladung sowie der Impuls eines
+Teilchens bestimmt werden.
+\\
+Aus den gegebenen Hits im Detektor muss, wie bereits erwähnt, die Spur eines Teilchens rekonstruiert
+werden. Dabei bedient man sich bei den i.d.R. in digitaler Form vorliegenden Daten diverser
+mathematischer Techniken bzw. Filter. Schwierigkeiten können vor allem bei vielen gleichzeitigen
+Events und Vielfachstreuung auftreten, bei der ein Teilchen durch Wechselwirkung mit der Materie im
+Detektor seine Richtung ändert. Ideale Eigenschaften eines Spurdetektors sind daher u.a. wenig
+Masse und gute Orts- und Zeitauflösungen.
+
+\section{Gasdetektoren}
+
+Bei Gasdetektoren ist die wichtigste Art der Wechselwirkung geladener Teilchen die Ionisation. Dabei
+entstehen freie Elektron-Ionen-Paare, deren Nachweis Hinweise auf die Spur des Teilchens geben
+können. Der Vorteil von Gas ist dabei die hohe Mobilität der freien Ladungsträger.
+In den frühesten Ausführungen von Gasdetektoren wurde die Spur optisch sichtbar gemacht und
+abfotografiert, wie z.B. bei der Nebelkammer, bei der die Ionisationsspur als Kondensationsstreifen
+zu verfolgen war. Ende der 1960er stellte G. Charpak die Vieldrahtkammer vor, in der die
+Elektron-Ionen-Paare über eine im Gas befindliche Drahtanode bzw. Plattenkathode
+gesammelt werden und diese als Stromimpuls nachgewiesen werden können. Dabei werden die Anodendrähte
+in äquidistantem Abstand aufgespannt, sodass die freien Elektronen entlang der Feldlinien zum
+nächstgelegenen Draht driften. Durch eine hohe Feldliniendichte nahe des Drahtes erhalten die
+Elektronen durch ihre Beschleunigung genügend Energie, um weitere Elektron-Ionen-Paare zu erzeugen;
+es entsteht eine lokale Ladungslawine an der Anode. Dieser verstärkte Stromimpuls ist leichter zu
+messen, gleichzeitig in gewissen Spannungsbereichen aber immer noch proportional zur im Gas
+deponierten Energie.
+Durch mehrere Lagen von Drähten in einem Winkel zueinander verdreht, kann so durch das Ansprechen
+einzelner Drähte eine mehrdimensionale Ortsinformation über ein das Gas durchquerendes Teilchen
+erhalten werden.
+\\
+Dieses Prinzip ist die Grundlage für viele der heutigen Gasdetektoren. Auch die Driftkammer, bei der
+die Driftzeit der Elektronen im Gas eine Ortsinformation liefert, funktioniert ähnlich. Durch einen
+Trigger, der einen Zeitpunkt angibt, wann ein Teilchen ins Gas eintritt - die freien Elektronen also
+erzeugt werden - und der Messung des Zeitpunktes, wann die Elektronen an der Drahtnode ankommen,
+kann bei bekannter Driftgeschwindigkeit der Elektronen im Gas die zurückgelegte Strecke berechnet werden.
+Auch hier erlauben mehrere Lagen von Anodendrähten, wenn auch weiter auseinandergelegen als bei der
+Vieldrahtkammer, die Rekonstruktion der Spur.
+\\
+Bei MicroMegas Detektoren (Micro-Mesh Gaseous Structure) z.B., einer neueren Entwicklung, wird der
+Bereich zwischen Anode und Kathode durch ein Gitter aufgeteilt, Drift- und Verstärkungsbereich. Erst
+im Verstärkungsbereich über der Anode, der eine viel höhere Feldstärke aufweist als der
+Driftbereich, lösen die dorthin gedrifteten Elektronen Ladungslawinen aus. Die werden über
+zweilagige, senkrecht zueinander ausgerichtete Auslesestreifen aufgefangen und ergeben somit eine
+zweidimensionale Ortsinformation. Mit mehreren Lagen von Micromegas kann auch hier die Spur
+rekonstruiert werden.
+\\
+Gasdetektoren sind auch heute noch als Spurdetektoren weit verbreitet wie z.B. im Compass- oder
+ATLAS- Experiment am CERN oder auch BaBar am SLAC.
+
+\section{Halbleiterdetektoren}
+
+Bei Halbleiterdetektoren wird grundsätzlich die Raumladungszone eines pn-Übergangs einer Diode im
+Sperrbetrieb zum Nachweis geladener Teilchen verwendet. Tritt ein solches Teilchen in diese
+Sperrschicht ein und gibt Energie an Valenzlektronen ab, so können diese in das Leitungsband
+wechseln. Zurück bleibt ein Loch bzw. Defektelektron. Beide können als quasifreie Ladungsträger zur
+Anode bzw. Kathode wandern und dort wiederum als Stromimpuls gemessen werden. Auch hierbei ist die
+Anzahl der erzeugten Elektron-Loch-Paare proportional zur Energie, die das Teilchen im Material
+abgegeben hat.
+Der Aufbau erfolgt als Streifen- oder Pixeldetektoren. Im ersten Fall werden dabei das i.d.R. 
+p-dotiere Material streifenförmig auf das n-dotierte Grundmasse aufgebracht, ein doppelseitiger
+Aufbau ermöglicht eine zweidimensionale Zuordnung der Treffer. Auch bei in Rechtecken segmentierten
+p-Elektroden ist dies möglich. Mehrere Detektoren hintereinander lassen eine Spurrekonstruktion
+zu.\\
+Halbleiterdetektoren werden wegen guter Ortsauflösung oft als erste Schicht am Kollisionspunkt
+eingesetzt, wie beispielsweise beim ATLAS-Experiment am CERN.
+
+\section{Szintillationszähler}
+
+Szintillatoren bestehen aus einem Material, dessen Moleküle nach Anregung durch geladene Teilchen
+oder Photonen die Anregungsenergie in Form von Licht wieder abgeben. Das Material für
+Szintillationsdetektoren ist meistens organischer Natur, wie z.B. Plastikszintillatoren.
+Szintillationszähler sind dünne Szintillationsfasern, die aufeinander geschichtet bzw. gebündelt
+werden. Wird Licht durch ein hindurchgehendes Teilchen erzeugt, wird dies über Totalreflexion durch 
+die Faser weitergeleitet und am Ende durch Vielkanalphotomultiplier in ein elektrisches Signal
+umgewandelt.
+\\
+Die Spur kann rekonstriert werden, indem mehrere Faserlagen in einem Winkel zueinander in Schichten
+angeordnet werden. Szintillationszähler werden zum Beispiel am DZero-Experiment am Fermilab
+eingesetzt sowie am A1 Experiment am MaMi.
+
+\section{Zusammenfassung}
+
+Die Frage, welcher Typ von Spurdetektor für welches Experiment am geeignetsten ist, lässt sich
+pauschal kaum beantworten. Zwar erscheint eine gute Ortsauflösung in jedem Falle wünschenswert,
+jedoch spielen eine Menge Faktoren in der Wahl der Detektorart eine Rolle: Ist die maximal
+erreichbare Ortsauflösung für den Zweck eines Experiments überhaupt notwendig? Wieviel Platz ist
+verfügbar, wie sollte der Detektor geometrisch angeordet sein? Stehen die Mittel und die
+erforderliche Zeit zur Verfügung, um einen bestimmten Detektor bauen zu können?
+\\
+Gasdetektoren beispielsweise sind im Aufbau verhältnismäßig günstig und können großflächig aufgebaut
+werden, weiterhin liegt das Signal direkt in elektronischer Form vor. Nicht nur die je nach Variante
+mäßige Ortsauflösung und hohe Ansprechzeit, auch die Infrastruktur wie Gaszuleitungen etc. müssen
+jedoch berücksichtigt werden. Halbleiterdetektoren weisen die wohl beste Ortsauflösung auf und liefern
+ebenfalls direkt ein elektronisches Signal, weisen allerdings auch eine hohe Verlustleistung auf,
+eine begrenzte Lebensauer bei hoher Strahlung und hohe Anschaffungskosten. Szintillationszähler
+haben wenig Masse und produzieren daher wenig Vielfachstreuung, haben eine kleine Ansprechzeit und
+sind sehr flexibel, jedoch ebenfalls kostspielig. Die schlechte Lichtausbeute kann auch dazu führen,
+dass der Nachweis der Photonen mit Schwierigkeiten verbunden ist.
+\\
+Nicht alle Ausführungen von Spurdetektoren konnten hier behandelt werden. Weiterhin ist dies
+natürlich ein Gebiet, auf dem ständig geforscht wird, sodass zukünftig vielleicht noch andere
+Methoden gefunden werden, um die Spuren von Teilchen sinnvoll zu rekonstruieren.
+
+
+% \bibliography{biblio}{}
+% \bibliographystyle{unsrt}
+% \printbibliography
+
+\section*{Referenzen}
+\begin{description}
+\item[\ensuremath{[1]}]~~W. R. Leo. \textit{Techniques for Nuclear and Particle Physics
+Experiments}. Springer-Verlag, 1994.
+\item[\ensuremath{[2]}]~~Claude Leroy and Pier-Giorgio Rancoita. \textit{Principles of Radiation Interaction in Matter
+and Detection}. World Scientific, 2009.
+\item[\ensuremath{[3]}]~~Dan Green. \textit{The Physics of Particle Detectors}. Cambridge University Press,
+2005.
+\item[\ensuremath{[4]}]~~ATLAS Experiment. Siehe cern.ch/ATLAS.
+\item[\ensuremath{[5]}]~~Compass Experiment. Siehe cern.ch/Compass.
+\item[\ensuremath{[6]}]~~BaBar Experiment. Siehe http://www-public.slac.stanford.edu/babar.
+\item[\ensuremath{[7]}]~~DZero Experiment. Siehe http://www-d0.fnal.gov/
+\item[\ensuremath{[8]}]~~A1 Experiment. Siehe http://wwwa1.kph.uni-mainz.de/A1/
+\end{description}
+\end{document}
