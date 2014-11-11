@@ -1,5 +1,6 @@
 \documentclass{PoS}
 
+% Um irgendeine Fehlermeldung zu beseitigen:
 \let\ifpdf\relax
 
 \usepackage{cite}
@@ -26,7 +27,7 @@
 % \usepackage{biblatex}
 
 \parindent0pt
-\hyphenation{Ex-pe-ri-ment}
+\hyphenation{Col-li-der-Ex-pe-ri-ment}
 
 \title{Spurdetektoren} \author{\speaker{Verena
 Grimm}\\
@@ -35,21 +36,21 @@ Grimm}\\
         E-mail: \email{vegrimm@students.uni-mainz.de}}
 
 \abstract{
-% The history of cold fusion is regarded under the light of the scientific method.
-% A short introduction to nuclear fusion in general is given before having a look at the beginnings of cold
-% fusion in the 1940's, leading to the most famous and controversially discussed experiment of cold fusion
-%  of Fleischmann and
-% Pons in 1989. Finally, the research in the years following as well as its future prospects are briefly
-% discussed, concluding the necessity of further research.
-einleitung in spurdetektoren (möglichkeiten, spuren geladener teilchen zu detektieren; warum macht
-man das; grundlegende funktionen von gas, halbleiter und szintidetektoren werden kurz erläutert und
-vor-und nachteile sowie einsatzgebiete 
+Spurdetektoren sind aus der heutigen Teilchenphysik nicht mehr wegzudenken und werden in zahlreichen
+Experimenten eingesetzt. In diesem Artikel werden ihr Verwendungszweck und ihre Funktion zur
+Detektion geladener Teilchen zusammenfassend beschrieben. Die Mechanismen verschiedener wichtiger
+Typen wie Gas-, Halbleiter und Szintillationsdetektoren werden erklärt, die wesentlichen Vor-
+und Nachteile abgewogen sowie die Frage nach der Wahl des Detektortyps kurz erläutert.
+% 
+%  einleitung in spurdetektoren (möglichkeiten, spuren geladener teilchen zu
+% detektieren; warum macht man das; grundlegende funktionen von gas, halbleiter und szintidetektoren
+% werden kurz erläutert und vor-und nachteile sowie einsatzgebiete 
 
 }
 
-\FullConference{Masterseminar I: Thema -- Kern- und Teilchenphysik\\
+\FullConference{Masterseminar I: Thema Kern- und Teilchenphysik\\
 		 WS 2014/2015,\\
-		 Mainz, Germany}
+		 Mainz, Deutschland}
 \ShortTitle{Spurdetektoren}
 % \PoS{Keine Ahnung was das ist}
 
@@ -57,7 +58,7 @@ vor-und nachteile sowie einsatzgebiete
 
 \section{Einleitung: Wozu die Spur eines Teilchens bestimmen?}
 
-Teilchendetektoren dienen dem Nachweis freier Teilchens durch Messung verschiedener Parameter wie
+Teilchendetektoren dienen dem Nachweis freier Teilchen durch Messung verschiedener Parameter wie
 z.B. Energie, Impuls oder Ladung. Dabei wird die absorbierte Energie, die ein Teilchen beim
 Durchgang durch die Materie des Detektors an diese abgibt, in ein auswertbares Signal umgewandelt.
 Ziel eines Spurdetektors ist es, mit diesem Signal auch eine Ortsinformation zu erhalten. Somit
@@ -107,36 +108,36 @@ erhalten werden.
 Dieses Prinzip ist die Grundlage für viele der heutigen Gasdetektoren. Auch die Driftkammer, bei der
 die Driftzeit der Elektronen im Gas eine Ortsinformation liefert, funktioniert ähnlich. Durch einen
 Trigger, der einen Zeitpunkt angibt, wann ein Teilchen ins Gas eintritt - die freien Elektronen also
-erzeugt werden - und der Messung des Zeitpunktes, wann die Elektronen an der Drahtnode ankommen,
+erzeugt werden - und der Messung des Zeitpunktes, wann die Elektronen an der Drahtanode ankommen,
 kann bei bekannter Driftgeschwindigkeit der Elektronen im Gas die zurückgelegte Strecke berechnet werden.
-Auch hier erlauben mehrere Lagen von Anodendrähten, wenn auch weiter auseinandergelegen als bei der
+Auch hier erlauben mehrere Lagen von Anodendrähten, wenn auch weiter auseinandergelegen als in der
 Vieldrahtkammer, die Rekonstruktion der Spur.
 \\
 Bei MicroMegas Detektoren (Micro-Mesh Gaseous Structure) z.B., einer neueren Entwicklung, wird der
-Bereich zwischen Anode und Kathode durch ein Gitter aufgeteilt, Drift- und Verstärkungsbereich. Erst
-im Verstärkungsbereich über der Anode, der eine viel höhere Feldstärke aufweist als der
-Driftbereich, lösen die dorthin gedrifteten Elektronen Ladungslawinen aus. Die werden über
+Bereich zwischen Anode und Kathode durch ein Gitter in den Drift- und Verstärkungsbereich
+aufgeteilt. Erst im Verstärkungsbereich über der Anode, der eine viel höhere Feldstärke aufweist
+als der Driftbereich, lösen die dorthin gedrifteten Elektronen Ladungslawinen aus. Die werden über
 zweilagige, senkrecht zueinander ausgerichtete Auslesestreifen aufgefangen und ergeben somit eine
 zweidimensionale Ortsinformation. Mit mehreren Lagen von Micromegas kann auch hier die Spur
 rekonstruiert werden.
 \\
-Gasdetektoren sind auch heute noch als Spurdetektoren weit verbreitet wie z.B. im Compass- oder
-ATLAS- Experiment am CERN oder auch BaBar am SLAC.
+Gasdetektoren sind auch heute noch als Spurdetektoren weit verbreitet, beispielsweise im Compass-
+oder ATLAS- Experiment am CERN oder auch BaBar am SLAC.
 
 \section{Halbleiterdetektoren}
 
 Bei Halbleiterdetektoren wird grundsätzlich die Raumladungszone eines pn-Übergangs einer Diode im
 Sperrbetrieb zum Nachweis geladener Teilchen verwendet. Tritt ein solches Teilchen in diese
 Sperrschicht ein und gibt Energie an Valenzlektronen ab, so können diese in das Leitungsband
-wechseln. Zurück bleibt ein Loch bzw. Defektelektron. Beide können als quasifreie Ladungsträger zur
-Anode bzw. Kathode wandern und dort wiederum als Stromimpuls gemessen werden. Auch hierbei ist die
-Anzahl der erzeugten Elektron-Loch-Paare proportional zur Energie, die das Teilchen im Material
-abgegeben hat.
-Der Aufbau erfolgt als Streifen- oder Pixeldetektoren. Im ersten Fall werden dabei das i.d.R. 
-p-dotiere Material streifenförmig auf das n-dotierte Grundmasse aufgebracht, ein doppelseitiger
-Aufbau ermöglicht eine zweidimensionale Zuordnung der Treffer. Auch bei in Rechtecken segmentierten
-p-Elektroden ist dies möglich. Mehrere Detektoren hintereinander lassen eine Spurrekonstruktion
-zu.\\
+wechseln. Im Valenzband bleibt ein Loch bzw. Defektelektron zurück. Beide können als quasifreie
+Ladungsträger zur Anode bzw. Kathode wandern und dort wiederum als Stromimpuls gemessen werden.
+Auch hierbei ist die Anzahl der erzeugten Elektron-Loch-Paare proportional zur Energie, die das
+Teilchen im Material abgegeben hat.
+Der Aufbau erfolgt als Streifen- oder Pixeldetektoren. Im ersten Fall wird dabei das i.d.R. 
+p-dotierte Material streifenförmig auf die n-dotierte Grundmasse aufgebracht; ein doppelseitiger
+Aufbau, bei dem auch der n-dotierte Bereich in Streifen eingeteilt ist, ermöglicht eine
+zweidimensionale Zuordnung der Treffer. Auch bei in Rechtecken (Pixeln) segmentierten p-Elektroden
+ist dies möglich. Mehrere Detektoren hintereinander lassen eine Spurrekonstruktion zu.\\
 Halbleiterdetektoren werden wegen guter Ortsauflösung oft als erste Schicht am Kollisionspunkt
 eingesetzt, wie beispielsweise beim ATLAS-Experiment am CERN.
 
@@ -166,12 +167,12 @@ erforderliche Zeit zur Verfügung, um einen bestimmten Detektor bauen zu können
 Gasdetektoren beispielsweise sind im Aufbau verhältnismäßig günstig und können großflächig aufgebaut
 werden, weiterhin liegt das Signal direkt in elektronischer Form vor. Nicht nur die je nach Variante
 mäßige Ortsauflösung und hohe Ansprechzeit, auch die Infrastruktur wie Gaszuleitungen etc. müssen
-jedoch berücksichtigt werden. Halbleiterdetektoren weisen die wohl beste Ortsauflösung auf und liefern
-ebenfalls direkt ein elektronisches Signal, weisen allerdings auch eine hohe Verlustleistung auf,
+jedoch berücksichtigt werden. Halbleiterdetektoren besitzen die wohl beste Ortsauflösung und
+liefern ebenfalls direkt ein elektronisches Signal, weisen allerdings auch eine hohe Verlustleistung auf,
 eine begrenzte Lebensauer bei hoher Strahlung und hohe Anschaffungskosten. Szintillationszähler
 haben wenig Masse und produzieren daher wenig Vielfachstreuung, haben eine kleine Ansprechzeit und
 sind sehr flexibel, jedoch ebenfalls kostspielig. Die schlechte Lichtausbeute kann auch dazu führen,
-dass der Nachweis der Photonen mit Schwierigkeiten verbunden ist.
+dass der Nachweis der Photonen bei kleiner Photonenzahl mit Schwierigkeiten verbunden ist.
 \\
 Nicht alle Ausführungen von Spurdetektoren konnten hier behandelt werden. Weiterhin ist dies
 natürlich ein Gebiet, auf dem ständig geforscht wird, sodass zukünftig vielleicht noch andere
